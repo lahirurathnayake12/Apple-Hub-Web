@@ -1,0 +1,335 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f5f7;
+    color:#333;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#000;
+    gap:1rem;
+}
+
+.menu-toggle{
+    display:none;
+    flex-direction:column;
+    justify-content:center;
+    gap:4px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    padding:0;
+}
+
+.menu-toggle span{
+    display:block;
+    width:25px;
+    height:3px;
+    background:#fff;
+    border-radius:2px;
+    transition:0.3s;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#fff;
+}
+
+.logo i{
+    font-size:32px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00bfff;
+}
+
+/* Hero */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:70px 8%;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:25px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:320px;
+    max-width:100%;
+}
+
+/* Button */
+
+.btn{
+    display:inline-block;
+    padding:12px 28px;
+    background:#000;
+    color:#fff;
+    text-decoration:none;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0077ff;
+}
+
+/* Categories */
+
+.categories{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.categories h2{
+    margin-bottom:40px;
+}
+
+.category-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+}
+
+/* 1. The Link Wrapper */
+.card-link {
+    text-decoration: none; /* Removes default link underline */
+    color: inherit;        /* Keeps your text and icon colors unchanged */
+    display: block;        /* Forces the link to expand to the full size of the card */
+}
+
+/* 2. Your Card Base Styles */
+.card {
+    background: #fff;
+    padding: 60px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+    text-align: center; 
+    border-radius: 8px;  
+}
+
+.card-link:hover .card {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15); /* Slightly boosts shadow when lifted */
+}
+
+/* 4. Icon Styles */
+.card i {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #0077ff;
+}
+
+.card h3 {
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+}
+
+/* Products */
+
+.products{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.products h2{
+    margin-bottom:40px;
+}
+
+.product-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.product-card img{
+    width:180px;
+    height:180px;
+    object-fit:contain;
+}
+
+.product-card h3{
+    margin:15px 0;
+}
+
+.product-card p{
+    font-size:20px;
+    color:#0077ff;
+    margin-bottom:15px;
+}
+
+.product-card button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#000;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.product-card button:hover{
+    background:#0077ff;
+}
+
+/* Offer */
+
+.offer{
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:70px 8%;
+}
+
+.offer h2{
+    margin-bottom:20px;
+}
+
+.offer p{
+    margin-bottom:25px;
+}
+
+.offer .btn{
+    background:#fff;
+    color:#000;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:30px;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:8px 0;
+}
+
+/* Responsive */
+
+.navbar-toggler {
+    border: none;
+    padding: 0.35rem 0.45rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.92);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #00bfff;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: rgb(33, 37, 41);
+        border-radius: 0.75rem;
+        padding: 0.75rem 1rem;
+        margin-top: 0.75rem;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.6rem 0.2rem;
+    }
+}
+
+@media(max-width:768px){
+
+.hero{
+    flex-direction:column-reverse;
+    text-align:center;
+}
+
+.hero-text h1{
+    font-size:36px;
+}
+
+.hero-image img{
+    width:250px;
+    margin-bottom:30px;
+}
+
+}
+
+
